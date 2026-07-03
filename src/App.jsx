@@ -619,7 +619,7 @@ const SERVICES_EST = [
   { id:"combo",     label:"Combo Especial",        desc:"Aplicação completa + Limpeza de Pele Básica de Brinde!", valor:80, destaque:true },
 ];
 const SERVICES_LIMP = [
-  { id:"residencial",       label:"Faxina Residencial",       icon:"house",    preco:"R$ 200",  nota:"Casa/Apto — valor máximo R$ 200" },
+  { id:"residencial",       label:"Faxina Residencial",       icon:"house",    preco:"R$ 200",  nota:null },
   { id:"comercial",         label:"Faxina Comercial",         icon:"building", preco:"R$ 250",  nota:null },
   { id:"limpeza_comercial", label:"Limpeza Comercial",        icon:"broom",    preco:"R$ 180",  nota:"Manutenção" },
   { id:"pos_obra",          label:"Limpeza Pós-Obra",         icon:"hardhat",  preco:"R$ 450",  nota:null },
@@ -957,13 +957,7 @@ export default function BeatrizSite() {
                 ))}
               </div>
 
-              {/* Casa/apto note */}
-              <div style={{background:"#E8F2FF",borderRadius:12,padding:"12px 14px",display:"flex",gap:10,alignItems:"flex-start"}}>
-                <Icon name="check" size={14} color="#1565C0" style={{marginTop:1,flexShrink:0}}/>
-                <p style={{fontSize:12.5,color:"#1A3A5C",lineHeight:1.6}}>
-                  Para <strong>casas e apartamentos</strong>, o valor máximo da faxina residencial é <strong>R$ 200</strong> — independente do tamanho. Orçamento sem compromisso via WhatsApp!
-                </p>
-              </div>
+
             </div>
           )}
         </section>
